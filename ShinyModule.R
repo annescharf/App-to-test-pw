@@ -16,6 +16,7 @@ shinyModuleUserInterface <- function(id, label) {
  
    tagList(
     titlePanel("MoveApps R-Shiny SDK"),
+    passwordInput(ns("pw"), "Password:"),
     uiOutput(ns('uiIndivL')),
     plotOutput(ns("plot")),
     p(readChar(fileName, file.info(fileName)$size))
